@@ -1,0 +1,17 @@
+# Movie-Recommender-System
+MOVIE RECOMMENDER SYSTEM is developed using Python and Machine Learning. It is a content based recommender system that recommend the movies to the users based on their previously watched  behavior. 
+
+There are two main steps of this project: 
+
+ ✨   1.) Data preprocessing:- It is a technique where the raw data(i.e. the    dataset  we take for preference) is cleaned, transformed and organized to make it suitable for analysis and modeling purpose.
+Here, during this step we remove unnecessary columns from the dataset and transformed and organized rest of the columns on the basis of which recommendation can be made.
+
+✨ 2.) Text Vectorization:- It is a process to convert text into vectors. It convert tags of movies in the form of vectors.
+There are many text vectorization techniques such as 'Bag of Words', 'Tf idf' and 'Word 2 Vec' etc...
+
+Here we use 'Bag of Words' technique
+BAG OF WORDS TECHNIQUE:- In this technique we combine all the tags of all the movie we have in Dataset. Then we found most common word in the new concatenate set . i.e. We check the frequency of common words in each movie tags. 
+
+
+After this we find the similarity between the vectors(i.e. the cosine distance between the vectors with respect to other vector). Lower the distance between vectors higher the similarity between the movies.
+At the end, it recommend us five high similar movies to the movie which we give as input.
